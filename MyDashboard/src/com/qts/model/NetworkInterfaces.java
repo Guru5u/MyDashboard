@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;

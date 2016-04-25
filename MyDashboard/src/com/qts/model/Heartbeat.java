@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-import com.avaldes.util.JsonDateSerializer;
+import com.qts.util.JsonDateSerializer;
 
 @XmlRootElement(name = "heartbeat")
 public class Heartbeat {

@@ -1,4 +1,4 @@
-package com.avaldes.service;
+package com.qts.service;
  
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -15,17 +15,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.avaldes.dao.DashboardRepository;
-import com.avaldes.model.DiskStatistics;
-import com.avaldes.model.Disks;
-import com.avaldes.model.Heartbeat;
-import com.avaldes.model.JvmStatistics;
-import com.avaldes.model.NetworkInterfaceDetails;
-import com.avaldes.model.NetworkInterfaceStats;
-import com.avaldes.model.NetworkInterfaces;
-import com.avaldes.model.OperatingSystemDetails;
-import com.avaldes.model.Statistics;
-import com.avaldes.util.JvmStatisticsUtility;
+import com.qts.dao.DashboardRepository;
+import com.qts.model.DiskStatistics;
+import com.qts.model.Disks;
+import com.qts.model.Heartbeat;
+import com.qts.model.JvmStatistics;
+import com.qts.model.NetworkInterfaceDetails;
+import com.qts.model.NetworkInterfaceStats;
+import com.qts.model.NetworkInterfaces;
+import com.qts.model.OperatingSystemDetails;
+import com.qts.model.Statistics;
+import com.qts.util.JvmStatisticsUtility;
  
 /**
  * Handles requests for the application home page.

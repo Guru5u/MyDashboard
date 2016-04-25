@@ -1,6 +1,5 @@
-package com.avaldes.util;
+package com.qts.util;
 
-import java.lang.reflect.Field;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -12,32 +11,27 @@ import org.hyperic.sigar.FileSystem;
 import org.hyperic.sigar.FileSystemUsage;
 import org.hyperic.sigar.NetInterfaceConfig;
 import org.hyperic.sigar.NetInterfaceStat;
-import org.hyperic.sigar.NetStat;
 import org.hyperic.sigar.OperatingSystem;
-import org.hyperic.sigar.MultiProcCpu;
 import org.hyperic.sigar.ProcCpu;
 import org.hyperic.sigar.Sigar;
-import org.hyperic.sigar.SigarLoader;
+import org.hyperic.sigar.SigarException;
 import org.hyperic.sigar.SigarProxy;
 import org.hyperic.sigar.SigarProxyCache;
-import org.hyperic.sigar.Uptime;
 import org.hyperic.sigar.cmd.Ps;
 import org.hyperic.sigar.cmd.Shell;
 import org.hyperic.sigar.ptql.ProcessFinder;
-import org.hyperic.sigar.SigarException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.avaldes.model.DiskStatistics;
-import com.avaldes.model.JvmStatistics;
-import com.avaldes.model.Memory;
-import com.avaldes.model.NetworkInterfaceDetails;
-import com.avaldes.model.NetworkInterfaceStats;
-import com.avaldes.model.NetworkInterfaces;
-import com.avaldes.model.OperatingSystemDetails;
-import com.avaldes.model.Process;
-import com.avaldes.model.Swap;
-import com.avaldes.service.RestController;
+import com.qts.model.DiskStatistics;
+import com.qts.model.JvmStatistics;
+import com.qts.model.Memory;
+import com.qts.model.NetworkInterfaceDetails;
+import com.qts.model.NetworkInterfaceStats;
+import com.qts.model.NetworkInterfaces;
+import com.qts.model.OperatingSystemDetails;
+import com.qts.model.Process;
+import com.qts.model.Swap;
 
 public class JvmStatisticsUtility {
 	private static final Logger logger = LoggerFactory.getLogger(JvmStatistics.class);
@@ -273,7 +267,7 @@ public class JvmStatisticsUtility {
 		jvm.setUsedMem(sigar.getMem().getUsed());
 		jvm.setFreeMem(sigar.getMem().getFree());
 		addMemoryHistory(sigar.getMem().getTotal(), sigar.getMem().getUsed(), sigar.getMem().getFree());
-		jvm.setMemoryHistory(memoryHistory.toArray(new Memory[memoryHistory.size()]));
+	//	jvm.setMemoryHistory(memoryHistory.toArray(new Memory[memoryHistory.size()]));
 		
 		jvm.setFreeMemPercent(sigar.getMem().getFreePercent());
 		jvm.setUserMemPrecent(sigar.getMem().getUsedPercent());
@@ -282,7 +276,7 @@ public class JvmStatisticsUtility {
 		jvm.setUsedSwap(sigar.getSwap().getUsed());
 		jvm.setFreeSwap(sigar.getSwap().getFree());
 		addSwapHistory(sigar.getSwap().getTotal(), sigar.getSwap().getUsed(), sigar.getSwap().getFree());
-		jvm.setSwapHistory(swapHistory.toArray(new Swap[swapHistory.size()]));
+		//jvm.setSwapHistory(swapHistory.toArray(new Swap[swapHistory.size()]));
 		
 		logger.debug(sigar.getProcStat().toString());
 		logger.debug(sigar.getCpuPerc().toString());

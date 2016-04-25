@@ -1,4 +1,4 @@
-package com.avaldes.util;
+package com.qts.util;
 
 import java.io.IOException; 
 import java.text.SimpleDateFormat; 

@@ -770,7 +770,7 @@
                 <footer>
                     <div class="">
                         <p class="pull-right">Dashboard Sample -- Amaury Valdes |
-                            <span class="image_icon_footer"><img src="images/dashboardIcon.png" alt="logo" /></span> avaldes.com
+                            <span class="image_icon_footer"><img src="images/dashboardIcon.png" alt="logo" /></span> quadratics.com
                         </p>
                     </div>
                     <div class="clearfix"></div>

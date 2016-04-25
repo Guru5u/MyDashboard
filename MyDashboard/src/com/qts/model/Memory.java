@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 public class Memory {
 	private long memoryTotal;

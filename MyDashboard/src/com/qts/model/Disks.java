@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 import java.util.ArrayList;
 
@@ -6,6 +6,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.codehaus.jackson.annotate.JsonProperty;
+
+import com.qts.model.DiskData;
 
 @XmlRootElement
 public class Disks {

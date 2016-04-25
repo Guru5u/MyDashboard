@@ -1,4 +1,4 @@
-package com.avaldes.dao;
+package com.qts.dao;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
-import com.avaldes.model.Statistics;
+import com.qts.model.Statistics;
  
 @Repository
 public class DashboardRepository {

@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 import javax.xml.bind.annotation.XmlElement;
 

@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.annotate.JsonPropertyOrder;

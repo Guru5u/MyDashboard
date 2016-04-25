@@ -1,4 +1,4 @@
-package com.avaldes.model;
+package com.qts.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -7,6 +7,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.codehaus.jackson.annotate.JsonProperty;
+
+import com.qts.model.Memory;
+import com.qts.model.Process;
+import com.qts.model.Swap;
 
 @XmlRootElement(name = "jvm_statistics")
 public class JvmStatistics implements Serializable {
@@ -349,5 +353,4 @@ public class JvmStatistics implements Serializable {
 				+ ", memoryHistory=" + Arrays.toString(memoryHistory) 
 				+ ", swapHistory=" + Arrays.toString(swapHistory) + "]";
 	}
-
 }
